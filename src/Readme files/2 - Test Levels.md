@@ -18,3 +18,12 @@ Then, relate to your own project.
 
 ***
 ### Acceptance testing
+
+***
+### Code examples:
+
+- Unit Testing: [link](http://github.com/blah)
+- Integration Testing: [link](http://github.com/blah)
+- System Testing: [link](http://github.com/blah)
+- Load Testing: [link](http://github.com/blah)
+- Static Testing: [link](http://github.com/blah)

@@ -13,13 +13,16 @@ Let's say for instance, that there are 3 groups of people,
 Teens(>12 && < 20).
 Young adults(>20 && < 45)
 ****
-###Boundary value analasys
+###Boundary value analysis
 
 ****
 ###Edge cases
+
 ****
 ###Decision tables
+
 ****
 ###Code coverage
+
 ****
 ###Mutation testing
