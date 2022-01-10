@@ -38,7 +38,7 @@ The AAA (Arrange, Act, Assert) pattern is a common way of writing unit tests for
 
 
 ***
-### Unit test lifecycle(BeforeAll, AfterAll / SetUp, TearDown)
+### Unit test lifecycle (BeforeAll, AfterAll / SetUp, TearDown)
 
 In general, a test framework make no guarantees about the order of execution of the individual test methods, and some even randomize the execution order on purpose. This is a good thing, because it makes it virtually impossible to create tests that are coupled to each other.\
 Why is this important?
