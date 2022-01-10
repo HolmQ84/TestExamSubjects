@@ -47,7 +47,7 @@ Test drivers (til Bottom-Up testing) og test stubs (til Top-Dowm testing) bliver
 
 Forskellige tilgange til at lave integrationstests:
 
-###  - Big Bang
+### Big Bang
 
 Big Bang testing er en tilgang hvor man kombinerer alle (eller mange) unit tests, og tester det hele sammen.
 
@@ -58,7 +58,7 @@ Denne tilgang bliver ofte brugt når en tester (eller et test hold) modtager hel
 Forskellen mellem Big Bang testing og System testing er at Big Bang tester interaktionen mellem unit tests, 
 hvorimod System Testing tester hele systemet.
 
-### - Top Down
+### Top Down
 
 Top-Down testing er den type integrations tests hvor man tester systemet oppe fra og ned.
 
@@ -72,7 +72,7 @@ Hvis man udvikler en webapplikation, hvor man først laver brugerfladen (GUI'en)
 
 Her vil man skulle lave en række Test Stubs, som leverer noget data som man kan arbejde med for at teste brugerfladen.
 
-### - Bottom Up
+### Bottom Up
 
 Bottom-Up testing er den modsatte tilgang af Top-Down. Her vil man starte med at teste systemet nede fra og op.
 
@@ -82,11 +82,11 @@ En Test-Driver er et slags modul/klasse som simulerer brugen af underliggende mo
 
 Testdrivere er de moduler, der fungerer som midlertidig erstatning for et kaldende modul og giver samme output som det faktiske produkt.
 
-### - Top-Down vs. Bottom-Up
+### Top-Down vs. Bottom-Up
 
 ![img.png](Images/topdown-bottomup.png)
 
-- Sandwich
+### Sandwich
   - Horizontalt
   - Vertikalt
 
