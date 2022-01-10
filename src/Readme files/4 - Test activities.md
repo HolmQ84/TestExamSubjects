@@ -150,7 +150,8 @@ this makes sure that we always have a testable build.
 ***
 ### Code reviews
 Also known as peer review, referees to a software quality assurance activity, where one or several people checks a program,
-mainly by reading parts of the source code. - At least one of the people must not be the code's author. the other people are called reviewers.
+mainly by reading parts of the source code. - At least one of the people must not be the code's author, the other people are called reviewers.\
+Be aware of author bias
 
 Code reviews are done to ensure
 - Better code quality.

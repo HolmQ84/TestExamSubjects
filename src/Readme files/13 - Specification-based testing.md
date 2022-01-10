@@ -1,5 +1,5 @@
 #Specification-based testing
-
+Explain specification-based testing, and how you can be more confident that you have written a sufficient amount of tests.
 ****
 ###Equivalence partitioning
 A software technique that divides the input data of a software unit input into partitions of
@@ -12,9 +12,11 @@ It can be seen as a sort of black box testing technique.
 Let's say for instance, that there are 3 groups of people,
 Teens(>12 && < 20).
 Young adults(>20 && < 45)
+
+Skrevet i 7
 ****
 ###Boundary value analysis
-
+Skrevet i 7
 ****
 ###Edge cases
 
