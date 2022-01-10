@@ -199,6 +199,22 @@ https://freecontent.manning.com/dependency-injection-and-testing-in-junit/
 
 ***
 ### Interfaces, contracts
+? No clue
 
+####Contracts
+Programming "by contract" is essentially a means of allowing programmers to verify execution of their methods does not corrupt the state of their data structures and so on. It is about what your code does not how it does it, some like to say.
 ***
 ### Black-box vs white-box (bb -> equivalence partitioning)
+
+**White box**Have access to source code
+**Black box**Don't have  access to source code
+
+_"Black box approach imposes an emotional distance from the target of the test"_ - le book s23
+
+Questions to keep in mind
+
+* What is its interface to the outside world?
+* What inputs does it take? (Have all allowed values been specified?)
+* How does it communicate success or failure?
+* How does it react to bad input? (Does it recover or crash?)
+* Does it surprise by doing something unexpected or unusual?
