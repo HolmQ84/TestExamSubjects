@@ -113,7 +113,7 @@ Prevent bugs instead of fixing them.
 
 
 ####Manuel code reviews
-![img.png](Images/ManuelCodeReview.png)
+![img.png](Images/ManuelReview.png)
 
 ####Automated Approaches - Model
 - Cyclomatic Complexity (CC)
