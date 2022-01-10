@@ -289,7 +289,7 @@ https://freecontent.manning.com/dependency-injection-and-testing-in-junit/
 
 ####Equivalence classes
 
-If 
+Same as Equivalence partitions 
 
 ####Boundary Value Analysis
 Boundary Value Analysis is a Black-Box testing technique used to check the errors at the boundaries of an input domain.
@@ -303,7 +303,7 @@ Hvis du konvetere 50USD til den fattigeste valuta(et afrikansk land.. mener det 
 ![img_4.png](Images/img_4 Unit test.png)
 
 
-####equivalence partitions
+####Equivalence partitions
 
 If you are to make a calculator that adds two sums together, is it then necessary to check if it calculates 5+5 correctly when you have testet for 4+4 and 3+3?
 Equivalence partitions is a grouping of the same datatype.
