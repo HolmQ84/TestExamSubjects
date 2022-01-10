@@ -137,7 +137,15 @@ Both types of maintenance require that the code is written with testability in m
 change the code into a nightmare which leads to legacy code.
 ***
 ### Continuous Integration
-When deploying code into the cloud
+When deploying code, we can hit "Merge hell" when pushing to the cloud, if we don't push often enough.
+
+When we use Continuous Integration, we push everytime we have built a small piece that is tested and works. It doesn't 
+have to be a full functioning program.
+In github when we push, we can add aromatization which always keeps an eye on the code. When code is pushed, it 
+automatically builds the code and tests it. then it pushes the code to the others in the team.
+
+if a conflict occurs, an email is sends to the team, telling where the conflict is, and who has been working on the code.
+this makes sure that we always have a testable build.
 
 ***
 ### Code reviews
