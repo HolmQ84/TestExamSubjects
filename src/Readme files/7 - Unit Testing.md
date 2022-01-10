@@ -247,13 +247,13 @@ Common challenges when introducing test-driven development are
 ***
 ### Dependency Injection
 
+Dependency Injection is a programming technique that makes a class independent of its dependencies. 
+“In software engineering, dependency injection is a technique whereby one object supplies the dependencies of another object.
 
-Dependency Injection is a programming technique that makes a class independent of its dependencies. “In software engineering, dependency injection is a technique whereby one object supplies the dependencies of another object.
+If a function/object/module depends on some other function/object/module, it should not go out and get what it needs.
+Instead, we explicitly give it anything it needs, typically by passing it in as a function parameter.
 
-If a function/object/module depends on some other function/object/module, it should not go out and get what it needs. Instead, we explicitly give it anything it needs, typically by passing it in as a function parameter.
-
-
-example:
+Example:
 
     public class TestInfoTest {
         //constructor with depencency injection
