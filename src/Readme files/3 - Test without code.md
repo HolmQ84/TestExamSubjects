@@ -113,7 +113,7 @@ Prevent bugs instead of fixing them.
 
 
 ####Manuel code reviews
-![img.png](img.png)
+![img.png](Images/img.png)
 
 ####Automated Approaches - Model
 - Cyclomatic Complexity (CC)
@@ -121,7 +121,7 @@ Prevent bugs instead of fixing them.
   - Higher number = More complex code = Bad.
 
 Flow graphs are used to calculate CC within a software program.
-![img_1.png](img_1.png)
+![img_1.png](Images/img_1.png)
 
 Formula for calculating code complexity:
 
@@ -150,7 +150,7 @@ Example:
     i=i+1;
     
     end do;
-![img_2.png](img_2.png)
+![img_2.png](Images/img_2.png)
 
 
     V(G) = 9 – 7 + 2 = 4
