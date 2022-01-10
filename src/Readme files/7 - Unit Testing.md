@@ -247,7 +247,41 @@ Common challenges when introducing test-driven development are
 ***
 ### Dependency Injection
 
+
 Dependency Injection is a programming technique that makes a class independent of its dependencies. “In software engineering, dependency injection is a technique whereby one object supplies the dependencies of another object.
+
+If a function/object/module depends on some other function/object/module, it should not go out and get what it needs. Instead, we explicitly give it anything it needs, typically by passing it in as a function parameter.
+
+
+example:
+
+    public class TestInfoTest {
+        //constructor with depencency injection
+        TestInfoTest(TestInfo testInfo) {
+            assertEquals("TestInfotest", testInfo.getDisplayname());
+        }
+    
+        @BeforeEach
+        void setUp(TestInfo testInfo) {
+            String displayName = testInfo.getDisplayName();
+            assertTrue(displayName.equals("display name of the method") ||
+                       displayName.equals("testGetNameOfTheMethod(TestInfo)"));
+        }
+    
+        @Test
+        void testGetNameOfTheMethod(TestInfo testInfo) {
+            assertEquals("testGetNameOfTheMethod(TestInfo)",
+                    testInfo.getDisplayName());
+        }
+    
+        @Test
+        @DisplayName("display name of the method")
+        testGetNameOfTheMethodWithDisplayNameAnnotation(TestInfo testInfo) {
+            assertTrue("display name of the method", testInfo.getDisplayName());
+        }
+    }
+
+https://freecontent.manning.com/dependency-injection-and-testing-in-junit/
 
 
 ***
