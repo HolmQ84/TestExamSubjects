@@ -11,4 +11,13 @@ Skrevet i 4
 
 ***
 ### What test levels can be covered by a CI system?
-git 
+
+1. Unit testing ✅
+
+2. Integration testing ✅
+
+3. System testing⛔
+   
+Så vidt ejg kan se er det ikke muligt at system teste
+
+3. Acceptance test ✅
