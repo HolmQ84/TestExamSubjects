@@ -4,8 +4,6 @@ Elaborate on what characterizes high code quality, and what makes code testable.
 ***
 ## Testable code
 
-![img.png](Images/A guy walks into a bar.png)
-
 To create testable code, it's important to follow a set of principles.
 
 ### SOLID principles.
@@ -14,8 +12,7 @@ To create testable code, it's important to follow a set of principles.
 
 Each module should only have one responsibility.
 
-#### *Example*
-
+*Example*\
 Imagine that you write a program that calls an external REST API endpoint, 
 does some kind of processing with the received data and writes it to a CSV file.\
 A naive approach might be to have everything in the same class.
@@ -42,15 +39,7 @@ Abstractions should not depend on details. Details should depend upon abstractio
 ***
 ### Names of tests
 
-Here are the basic rules for naming tests:
 
-- No rigid naming policy. You can’t fit a high-level description of a complex behavior into a narrow box of such a policy. Allow freedom of expression.
-- Name the test as if you were describing the scenario to a non-programmer person who is familiar with the problem domain. A domain expert or a business analyst are good examples.
-- Separate words by underscores. It helps improve readability of long names.
-
-#### *Example of naming tests*
-
-![img.png](Images/testNamesExample.png)
 
 ***
 ### “sufficient” tests of a method or class
