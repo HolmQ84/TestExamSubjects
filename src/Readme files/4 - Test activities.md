@@ -19,6 +19,7 @@ Examining each unit.
     public class Calculator {
         public int add(int a, int b) { return a+b; }
     }
+
 <b>Test for the class</b>
 
     public class AddTest{
@@ -37,7 +38,7 @@ Examining each unit.
         }
     }
 ####Why?
-The claims are:\
+The claims are:
 - It helps to fix bugs early in development.
 ![img.png](Images/unitTest1.png)
 
