@@ -36,6 +36,11 @@ Example of a unit test with JUnit.
 
 ![img](Images/unittest.png)
 
+####Purity
+Pure functions are easier to test
+- Returns the same value, when same argument(s) are given.
+- Has no side effects
+
 ***
 ## Integration testing
 
@@ -192,12 +197,3 @@ Acceptance tests bliver oftest beskrevet med Gherkin language.
 
 "Gherkin language is a Business Readable, Domain Specific Language created especially for behavior descriptions. 
 It gives you the ability to remove logic details from behavior tests. Gherkin serves two purposes: serving as your project's documentation and automated tests."
-
-***
-### Code examples:
-
-- Unit Testing: [link](http://github.com/blah)
-- Integration Testing: [link](http://github.com/blah)
-- System Testing: [link](http://github.com/blah)
-- Load Testing: [link](http://github.com/blah)
-- Static Testing: [link](http://github.com/blah)
