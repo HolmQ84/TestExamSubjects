@@ -231,7 +231,7 @@ https://freecontent.manning.com/dependency-injection-and-testing-in-junit/
 
 ##### *Example*
 
-![img.png](InversionOfControl.png)
+![img.png](Images/InversionOfControl.png)
 
 ***
 ### Low coupling, high cohesion
