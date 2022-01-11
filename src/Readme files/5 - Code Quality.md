@@ -114,7 +114,9 @@ This also ensures that we can determine wheither or not our test calculates for 
 
 #### 3. Check your invariants
 
-?
+Man skal sikre sig at variabler som kan ændre under en test, er statiske.
+
+Fx. et objekt skal testes, som har et ur i sig. Her skal man sikre at uret leverer en statisk værdi, vha. fx en stub.
 
 An invariant is a condition or relation that is always true. The definition is modified somewhat for
  concurrent execution: an invariant is a condition or relation that is true when the associated lock is being set.
@@ -139,7 +141,7 @@ A transaction must be isolated and not interfere with another transaction.
 
 A transaction must remain in the database.
 
-### 5. Test correct error handling
+#### 5. Test correct error handling
 
 You must make sure to test the error handling as well. 
 Testing that the method/class returns the correct errors when given wrong input, is as crucial as testing the correct inputs.
