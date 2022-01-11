@@ -116,16 +116,6 @@ Other tools for static analysis:
 
 ***
 
-### Programs and plugins for static analysis
-
-#### FindBugs
-
-
-
-#### SonarLint
-
-
-
 #### Security
 
 
@@ -136,3 +126,23 @@ Other tools for static analysis:
 
 #### Technical debt
 
+Technical debt (also known as tech debt or code debt)
+describes what results when development teams take actions to expedite the delivery of a piece of
+functionality or a project which later needs to be refactored. \
+In other words, it's the result of prioritizing speedy delivery over perfect code.
+
+### Programs and plugins for static analysis
+
+#### FindBugs
+
+
+
+#### SonarLint
+
+
+
+#### PMD
+
+
+
+#### Checkstyle

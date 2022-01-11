@@ -144,6 +144,10 @@ Hvordan håndterer programmet nogle store spikes i belastningen.
 
 - Configuration testing
 
+Configuration testing is a method of testing a system under development on multiple machines that have different 
+combinations or configurations of hardware and software. The performance of the system or an application is tested 
+against each of the supported hardware & software configurations.
+
 Plugin til formålet:
 
 JMeter er et plugin som kan bruges til at sende en masse requests på kort tid, og dermed teste kapaciteten af programmet.

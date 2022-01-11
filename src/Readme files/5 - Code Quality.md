@@ -4,33 +4,71 @@ Elaborate on what characterizes high code quality, and what makes code testable.
 ***
 ## Testable code
 
-![img.png](Images/A guy walks into a bar.png)
-
 To create testable code, it's important to follow a set of principles.
 
-### SOLID principles.
+###### Observability
 
-###### *S - Single Responsibility Principle.*
+First of all, we need to make sure that the SUT (System under Test) is observable.
+Without the possibility to check wheither or not our tests have made the impact we wanted, the test will be useless.
 
-Each module should only have one responsibility.
+Observability should be thought about very early in the development phase, to make sure the SUD is programmed correctly for later testing.
 
-###### *O - Open/Closed Principle.*
+The different ways of observing a SUT, can include:
 
-Your classes should be open for extensions, but closed to modifications.
+- Debugging
+- System Outputs
+- Loggers
 
-###### *L - Liskov Substitution Principle.*
+###### Controllability
 
-Objects of a superclass should be replaceable with objects of its subclasses without breaking the application.
+Controllability is the ability to change the states of something in a SUT.
 
-###### *I - Integration Segregation Principle.*
+It is both neccesary to test functionality, but also leads to reproducibility.
 
-No client should be forced to depend on methods it does not use.
+A state means the possibility to change fields, variables or parameters to produce different outputs.
 
-###### *D - Dependency Inversion Principle.*
+###### Deployability
 
-High-level modules should not depend on low-level modules; both should depend on abstractions.\
-Abstractions should not depend on details. Details should depend upon abstractions.
+Deployability is a measure of the amount of work needed to deploy a given system.
 
+To get a rough feeling - ask yourself:
+
+"How long does it take to get a change that affects one line of code into production."
+
+###### Isolability
+
+Isolability is, as the name suggests, the focus on isolating code parts as much as possible.
+
+In many ways, it is similar to low coupling - and therefore desirable for both developers and testers.
+
+The lower coupling a programs modules have, the easier it is to test and reuse the modules.
+
+###### Smallness
+
+The smaller the software, the better testability - because there's less to test.
+
+###### Singularity
+
+If something is singular, there's only one instance of it.
+
+In systems with high singularity, every behavior and piece of data have a single source of truth.
+Whenever we want to make a change, we make it in one place.
+
+###### Level of Abstraction
+
+Level of Abstraction is determined by the choice of programming language as well as the IDE.
+
+With modern languages and frameworks, they tend to do a lot of things 'under the hood', which means that there's less code to test.
+
+###### Efficiency
+
+Efficiency refers to the ability to use the given programming language's functionality to keep the code expressive and concise.
+
+###### Reusability
+
+Reusability means using third-party components to avoid reinventing the wheel.
+When using components from previous systems or from external source codes, we can make sure that the SUD is as
+small as possible, which again means fewer tests needed to be done.
 ***
 ## Names of tests
 
@@ -45,7 +83,6 @@ Here are the basic rules for naming tests:
 #### *Example of naming tests*
 
 ![img.png](Images/testNamesExample.png)
-
 ***
 ## “sufficient” tests of a method or class
 
@@ -79,7 +116,8 @@ This also ensures that we can determine wheither or not our test calculates for 
 
 ?
 
-Something that doesn't change state? Is always the same?
+An invariant is a condition or relation that is always true. The definition is modified somewhat for
+ concurrent execution: an invariant is a condition or relation that is true when the associated lock is being set.
 
 #### 4. Remember the ACID rules
 
