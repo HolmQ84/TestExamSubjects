@@ -12,10 +12,10 @@ Explain how to find out if a code base is maintainable.
 
 ***
 ### Continuous Integration
-
+Skrevet i 4
 ***
 ### Static Analysis
-
+Skrevet i 3
 ***
 ### Dependency injection, inversion of control
 
