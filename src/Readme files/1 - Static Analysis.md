@@ -34,6 +34,7 @@ of where to focus on improving their skills and thus creating better code.
     - Higher number = More complex code = Bad.
 
 Flow graphs are used to calculate CC within a software program.
+
 ![img_1.png](Images/img_1.png)
 
 Formula for calculating code complexity:
@@ -63,6 +64,7 @@ Example:
     i=i+1;
     
     end do;
+
 ![img_2.png](Images/img_2.png)
 
 
@@ -102,7 +104,7 @@ Cyclomatic Complexity for this program will be 8-7+2=3.
 | Complexity number | Meaning                                                                          |
 |-------------------|----------------------------------------------------------------------------------|
 | 1 - 10            | Structured and well written code<br>High Testability <br>Cost and Effort is less |
-| 10 - 20           | Complex Code <br>Medium Testibility <br>Cost and effort is minimum               |
+| 10 - 20           | Complex Code <br>Medium Testability <br>Cost and effort is minimum               |
 | 20 - 40           | Very complex code <br>Low testability <br>Cost and efforts are High              |
 | >40               | Not at all testable <br>Very high Cost and Effort                                |
 
@@ -119,11 +121,32 @@ Other tools for static analysis:
 
 #### Security
 
+Using static analysis tools, you can also increase the overall security of the SUT.
 
+Common things that static analysis tools can help find:
+
+- SQL injection vulnerabilities
+- Recommended encryption standards
+- Key Generation recommendations
+- And much more...
 
 #### Code smell
 
+A code smell is a surface indication that usually corresponds to a deeper problem in the system.
 
+Code smells are subjective and vary based on developer, language, and methodology, among other factors.
+
+It is an essential part of software development to find code smells, dig into the underlying causes and fix them via refactoring.
+
+- <ins>Bloaters</ins>: This includes code, like methods and classes, that has become huge over time by accumulating 
+functionality and feature creep.
+E.g., long methods, god-classes, long parameter lists.
+- <ins>Dispensable</ins>: This refers to dead code, which is not being invoked or executed. These blocks of code are 
+unnecessary, as they provide no benefits but increase technical debt.
+E.g., duplicated code, refactoring artifacts, premature generalization.
+- <ins>Couplings</ins>: This means a code that should be independent ends up tied together because of excessive 
+delegation or lack/absence of access control.
+E.g., code forwarding, use of internal or private members.
 
 #### Technical debt
 
@@ -134,16 +157,48 @@ In other words, it's the result of prioritizing speedy delivery over perfect cod
 
 ### Programs and plugins for static analysis
 
-#### FindBugs
+#### QAPlug
 
+A static analysis tool that we have worked with during our semester is called QAPlug
 
+QAPlug manages code quality which integrates tools such as PMD, CheckStyle and FindBugs.
+
+###### PMD
+
+PMD is a source code analyzer.
+
+It finds common programming flaws like 
+
+- Unused variables
+- Empty catch blocks
+- Unnecessary object creation
+- Copy-Paste-Detector
+
+###### CheckStyle
+
+Checkstyle is a development tool to help programmers write Java code that adheres to a coding standard. \
+It automates the process of checking Java code to spare humans of this boring (but important) task. \
+This makes it ideal for projects that want to enforce a coding standard.
+
+Checkstyle is highly configurable and can be made to support almost any coding standard.
+
+###### FindBugs
+
+FindBugs is a plugin to detect bugs in a source code.
+When run, it generates a review with an overview of the bugs found.
+
+A review is a classification of an issue as:
+- Must-fix
+- Should-fix
+- Mostly-harmless
+- Not-a-bug
+- And several other categories.
 
 #### SonarLint
 
-
-
-#### PMD
-
-
-
-#### Checkstyle
+SonarLint is a free IDE extension to find and fix bugs, 
+vulnerabilities and code smells as you write code! Like a spell checker, 
+SonarLint highlights issues on the fly and provides quick fixes or clear remediation 
+guidance to help you clean the code before it is even committed. \
+With support for several popular and classic languages, SonarLint helps developers of all experience and skill levels 
+write efficient, safe code.

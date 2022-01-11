@@ -1,6 +1,8 @@
 # 1.5 - Code Quality
+
 Testing is related to ensuring higher code quality. 
 Elaborate on what characterizes high code quality, and what makes code testable.
+
 ***
 ## Testable code
 
