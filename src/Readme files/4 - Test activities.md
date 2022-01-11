@@ -142,7 +142,7 @@ When deploying code, we can hit "Merge hell" when pushing to the cloud, if we do
 
 When we use Continuous Integration, we push everytime we have built a small piece that is tested and works. It doesn't 
 have to be a full functioning program.
-In github when we push, we can add aromatization which always keeps an eye on the code. When code is pushed, it 
+In github when we push, we can add automation which always keeps an eye on the code. When code is pushed, it 
 automatically builds the code and tests it. then it pushes the code to the others in the team.
 
 if a conflict occurs, an email is sends to the team, telling where the conflict is, and who has been working on the code.
@@ -150,7 +150,8 @@ this makes sure that we always have a testable build.
 
 ***
 ### Code reviews
-Also known as peer review, referees to a software quality assurance activity, where one or several people checks a program,
+Also known as peer review. 
+This refers to a software quality assurance activity, where one or several people checks a program,
 mainly by reading parts of the source code. - At least one of the people must not be the code's author, the other people are called reviewers.\
 Be aware of author bias
 

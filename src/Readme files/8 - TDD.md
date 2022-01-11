@@ -5,6 +5,8 @@ Explain test driven development, and how it affects the development process and 
 Means driving the design development of the code using tests as specifications
 ****
 ###Red, Green, Refactor
+Red, Green, refactor is the TDD mantra.
+
 1. Write a test that fails.
 2. Simplest thing we can think of, to get our test to pass.
 3. Refactor the code, so when going forward, the code will be as easy to change as possible
