@@ -19,6 +19,24 @@ A good way of writing layers together that often ensures testability is using **
 
 ***
 ### System resources
+System resources includes:
+
+- System memory
+- Cache memory
+- Hard disk space
+- DMA (Direct Message Access)
+
+When using many dependencies in a system, the overall resource usage will increase linearly.
+
+The more the system grows, it becomes increasingly relevant to limit the amount of resource usage to ensure
+that the system won't overgrow the resource limitations, which will result in a longer response time from server,
+and can also make the system more unstable overall.
+
+The best way to decrease the amount of system resources used for a system, is to make sure that you only instantiate
+objects when needed, and not instantiate more objects of the same type - if they can be reused.
+
+A strategy to optimize your resource usage is to implement a IoC Container in your system.
+This way you can better administrate and reuse objects, to keep your cache as small as possible.
 
 ***
 ### Relations between objects
@@ -75,6 +93,10 @@ The IoC principle suggests inverting the control, meaning that instead of drivin
 cab, where another person will drive the car.
 
 
+To fulfill IoC, you need to make object creation responsibility external compared to making each method/class
+instantiating objects by themselves.\
+This way you will make a much looser coupling between classes/methods, and also adding re-usability of the different
+objects which makes the system use less resources as well.
 
 ***
 ### Mocks
