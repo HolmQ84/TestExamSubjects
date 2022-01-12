@@ -220,7 +220,6 @@ The benefits:
 
 - Readable, maintainable and more consistent code.
 
-
 PROS:
 - Lint checks syntax errors and structural problems.
 
