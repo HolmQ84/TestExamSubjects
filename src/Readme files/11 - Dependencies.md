@@ -41,6 +41,74 @@ This way you can better administrate and reuse objects, to keep your cache as sm
 ***
 ### Relations between objects
 
+Direct relations between objects will result in tighter coupling, which leads to several difficulties regarding
+testing the system.
+
+To resolve this issue, you need to think about dependency injections and IoC.
+
+*Example*
+
+Level 0:
+
+    class Raffle {
+        private List<Integer> numbers;
+
+        public Raffle() {
+            this.numbers = {1, 2, 3, 4, 5};
+        }
+    }
+
+    class Tester {
+        Raffle raffle = new Raffle();
+        // Check the variables in 'numbers' field.
+        // Act, Arrange, Assert.
+    }
+
+At level 0, when you instantiate an object, it will already have been defined which numbers will be generated.
+This makes it harder to test, because you need to check inside the class which numbers are generated, to test it properly.
+
+Level 1:
+
+    class Raffle {
+        private List<Integer> numbers;
+
+        public Raffle(List<Integer> numbers) {
+            this.numbers = numbers;
+        }
+    }
+
+    class Tester {
+        Raffle raffle = new Raffle( {1, 2, 3, 4, 5} );
+        // Act, Arrange, Assert.
+    }
+
+At level 1, when you instantiate an object, you can define the numbers yourself, which makes it a lot easier to test
+the class - because you have direct access to the variables and can define them yourself.
+
+Level 2:
+
+    class Raffle {
+        private List<Integer> numbers;
+
+        public Raffle(List<Integer> numbers) {
+            this.numbers = numbers;
+        }
+    }
+
+    class ObjectFactory {
+        List<Object> objects = new ArrayList<>();
+        
+        // Get object method.
+    }
+
+    class Tester {
+        Raffle raffle = ObjectFactory.getObject(0);
+        // Act, Arrange, Assert.
+    }
+
+At level 2, you outsource the instantiating of objects to an external source, which leads to looser coupling, which
+makes the testers happy and stress-free!
+
 ***
 ### Dependency inversion, Inversion of Control, Dependency Injection
 
