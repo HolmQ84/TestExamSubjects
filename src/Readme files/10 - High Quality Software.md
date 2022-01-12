@@ -67,8 +67,43 @@ Interfaces are used in something like Stubs where you create a stubclass where a
 ***
 ### Inversion of control
 
- Venter på at kunne kopire fra Martin
 
+Inversion of Control (IoC) is a programming principle.\
+IoC inverts the flow of control as compared to traditional control flow.
+
+The general purpose of using IoC is to create looser coupling between classes, and thereby increasing testability and
+maintainability.
+
+To fulfill IoC, you need to make object creation responsibility external compared to making each method/class
+instantiating objects by themselves.\
+This way you will make a much looser coupling between classes/methods, and also adding re-usability of the different
+objects which makes the system use less resources as well.
+
+##### *How to achieve loose coupling using IoC containers.*
+
+Step 1:
+- You have a bunch of tightly coupled classes.
+
+Step 2:
+- You implement the IoC using factory patterns.
+
+Step 3:
+- You create abstraction between classes by using a Dependency Injection Principle (DIP) which involves creating
+  interfaces for the classes to communicate with each other.
+
+Step 4:
+- You implement Dependency Injection by changing the method/classes, so they take the necessary objects as parameters
+  instead of instantiating the objects themselves.
+
+Step 5:
+- You create a IoC container (a sort of 'objectFactory') which holds all the objects which are needed for different
+  classes/methods.
+
+Step 6:
+- You now have a much looser coupling between classes/modules, which helps with testing, maintenance and further
+  development.
+
+![img.png](Images/HowToAchieveLooseCoupling.png)
 
 ***
 ### Dependency injection

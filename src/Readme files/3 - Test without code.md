@@ -220,13 +220,11 @@ The benefits:
 
 - Readable, maintainable and more consistent code.
 
-#
+
 PROS:
 - Lint checks syntax errors and structural problems.
 
-
 - Lint checks against best practices and code style guideline violations.
-
 
 - Lint is inexpensive 
 
