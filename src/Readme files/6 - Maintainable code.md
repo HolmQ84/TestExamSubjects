@@ -67,7 +67,7 @@ When deploying code, we can hit "Merge hell" when pushing to the cloud, if we do
 
 When we use Continuous Integration, we push everytime we have built a small piece that is tested and works. It doesn't
 have to be a full functioning program.
-In github when we push, we can add automation which always keeps an eye on the code. When code is pushed, it
+In GitHub when we push, we can add automation which always keeps an eye on the code. When code is pushed, it
 automatically builds the code and tests it. then it pushes the code to the others in the team.
 
 if a conflict occurs, an email is sends to the team, telling where the conflict is, and who has been working on the code.
@@ -170,7 +170,7 @@ Cyclomatic Complexity for this program will be 8-7+2=3.
 | Complexity number | Meaning                                                                          |
 |-------------------|----------------------------------------------------------------------------------|
 | 1 - 10            | Structured and well written code<br>High Testability <br>Cost and Effort is less |
-| 10 - 20           | Complex Code <br>Medium Testibility <br>Cost and effort is minimum               |
+| 10 - 20           | Complex Code <br>Medium Testability <br>Cost and effort is minimum               |
 | 20 - 40           | Very complex code <br>Low testability <br>Cost and efforts are High              |
 | >40               | Not at all testable <br>Very high Cost and Effort                                |
 
@@ -252,7 +252,7 @@ Step 3:
 interfaces for the classes to communicate with each other.
 
 Step 4:
-- You implement Dependency Injection by changing the method/classes so they take the necessary objects as parameters 
+- You implement Dependency Injection by changing the method/classes, so they take the necessary objects as parameters 
 instead of instantiating the objects themselves.
 
 Step 5:
@@ -270,8 +270,8 @@ development.
 
 Low Coupling / Loose Coupling makes it easier to maintain a code base. DUH!
 
-High Cohesion is good aswell. It makes sure that you know exactly how the code runs, aswell as minimizing the changes 
-of intruders being able to manipulate the code into doing something you dont want it to do.
+High Cohesion is good as well. It makes sure that you know exactly how the code runs, as well as minimizing the changes 
+of intruders being able to manipulate the code into doing something you don't want it to do.
 
 ***
 ### Cyclomatic code complexity
@@ -349,7 +349,7 @@ Cyclomatic Complexity for this program will be 8-7+2=3.
 | Complexity number | Meaning                                                                          |
 |-------------------|----------------------------------------------------------------------------------|
 | 1 - 10            | Structured and well written code<br>High Testability <br>Cost and Effort is less |
-| 10 - 20           | Complex Code <br>Medium Testibility <br>Cost and effort is minimum               |
+| 10 - 20           | Complex Code <br>Medium Testability <br>Cost and effort is minimum               |
 | 20 - 40           | Very complex code <br>Low testability <br>Cost and efforts are High              |
 | >40               | Not at all testable <br>Very high Cost and Effort                                |
 
@@ -358,7 +358,7 @@ Other tools for static analysis:
 - Checkstyle
   - Coding standards and conventions.
 - FindBugs
-  - Finds bugs and potential future bugs
+  - FindBugs and potential future bugs
 - PMD
   - Warns about bad practices
 
