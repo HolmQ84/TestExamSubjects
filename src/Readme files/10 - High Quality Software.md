@@ -190,3 +190,6 @@ There isn’t a specific measure of portability. But there are several ways you 
 Reusability measures whether existing assets — such as code — can be used again. Assets are more easily reused if they have characteristics such as modularity or loose coupling.
 
 Reusability can be measured by the number of interdependencies. Running a static analyzer can help you identify these interdependencies.
+
+
+
