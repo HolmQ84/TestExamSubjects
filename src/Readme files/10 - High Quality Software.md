@@ -88,7 +88,7 @@ Step 2:
 - You implement the IoC using factory patterns.
 
 Step 3:
-- You create abstraction between classes by using a Dependency Injection Principle (DIP) which involves creating
+- You create abstraction between classes by using a Dependency Inversion Principle (DIP) which involves creating
   interfaces for the classes to communicate with each other.
 
 Step 4:
