@@ -82,5 +82,20 @@ It is generally accepted that 80% coverage is a good goal.
 
 ****
 ###Mutation testing
+This is a form of white box testing in which testers change specific components in the source code, to ensure
+a software test will be able to detect the changes.
+
+This is typically used on unit test and is a way to ensure robustness of the code.
+
+We can see mutation testing as us testing our own test code.
+
+Creating a mutant, could be just to change a statement of **== to !=** and then see if the tests fails when we run them.
+
+If our tests fails, this means that our tests have killed the mutant.
+
+
+To do this in a big application could take a lot of time.
+
+Instead, we can use Pitest for java which has the capability to do this automatically for us.
 
 
