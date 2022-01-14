@@ -2,8 +2,6 @@
 Explain test levels, and what characterizes the individual levels. 
 Then, relate to your own project.
 
-![img](https://media1.giphy.com/media/7MZ0v9KynmiSA/giphy.gif)
-
 ***
 ## Unit testing
 
@@ -23,20 +21,14 @@ A unit test may not:
 - No talking to a DB.
 - No talking through a network.
 - No touching the file system.
-- Must be able to run at the same time as other tests.
 - Must not require special workarounds or changes.
 
 If any of the above points are used, it will be an integration test.
 
-![img](Images/unittestimg.png)
 
 A classic tool for using unit tests is JUnit.
 
-Example of a unit test with JUnit.
-
-![img](Images/unittest.png)
-
-####Purity
+####Pure Functions
 Pure functions are easier to test
 - Returns the same value, when same argument(s) are given.
 - Has no side effects
@@ -44,7 +36,7 @@ Pure functions are easier to test
 ***
 ## Integration testing
 
-Integrationstests er den fase hvor individuelle software moduler kombineres og testes som en gruppe.
+Integrationstests er Unit tests kombineret og testet som en gruppe.
 
 Integrationstests laves for at evaluere om et system eller et komponent opfylder de specificerede funktionelle krav.
 
@@ -149,9 +141,7 @@ Hvordan håndterer programmet nogle store spikes i belastningen.
 
 - Configuration testing
 
-Configuration testing is a method of testing a system under development on multiple machines that have different 
-combinations or configurations of hardware and software. The performance of the system or an application is tested 
-against each of the supported hardware & software configurations.
+Testing i på forskellige typer computere / OS's.
 
 Plugin til formålet:
 
@@ -160,8 +150,6 @@ JMeter er et plugin som kan bruges til at sende en masse requests på kort tid, 
 - JMeter kan lave Load Tests på Databaser.
 - Det kan køres i command line.
 - Derudover kan det køres gennem fx. Jenkins eller en anden CI manager (Continuous Integration).
-
-![img.png](Images/JMeter.png)
 
 Andre redskaber til formålet kan være <ins>Locust</ins> eller <ins>BlazeMeter</ins>.
 
@@ -196,6 +184,3 @@ Acceptance tests bliver udført at kunden / Product Owneren.
 Hvis en acceptance test fejler, starter man forfra i processen i forhold til Verification/Validation modellen.
 
 Acceptance tests bliver oftest beskrevet med Gherkin language.
-
-"Gherkin language is a Business Readable, Domain Specific Language created especially for behavior descriptions. 
-It gives you the ability to remove logic details from behavior tests. Gherkin serves two purposes: serving as your project's documentation and automated tests."

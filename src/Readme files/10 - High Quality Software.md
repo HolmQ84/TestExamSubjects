@@ -88,7 +88,7 @@ Step 2:
 - You implement the IoC using factory patterns.
 
 Step 3:
-- You create abstraction between classes by using a Dependency Injection Principle (DIP) which involves creating
+- You create abstraction between classes by using a Dependency Inversion Principle (DIP) which involves creating
   interfaces for the classes to communicate with each other.
 
 Step 4:
@@ -190,3 +190,6 @@ There isn’t a specific measure of portability. But there are several ways you 
 Reusability measures whether existing assets — such as code — can be used again. Assets are more easily reused if they have characteristics such as modularity or loose coupling.
 
 Reusability can be measured by the number of interdependencies. Running a static analyzer can help you identify these interdependencies.
+jkkj
+
+

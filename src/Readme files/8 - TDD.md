@@ -49,7 +49,7 @@ It is both neccesary to test functionality, but also leads to reproducibility.
 
 A state means the possibility to change fields, variables or parameters to produce different outputs.
 
-###### Deployability
+###### - Deployability
 
 Deployability is a measure of the amount of work needed to deploy a given system.
 
@@ -57,7 +57,7 @@ To get a rough feeling - ask yourself:
 
 "How long does it take to get a change that affects one line of code into production."
 
-###### Isolability
+###### - Isolability
 
 Isolability is, as the name suggests, the focus on isolating code parts as much as possible.
 

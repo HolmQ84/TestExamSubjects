@@ -3,96 +3,62 @@ Explain what kinds of tests can be carried out without running any code.
 Explain how it can be used on non-code documents as well.
 ***
 ### Reviews
-Formal reviews: 
 
-- pre-planned meeting. 
+Formelle reviews:
 
+- Aftalt møde.
+- Alle får materiale på forhånd, for at være forberedte.
+- Der findes løsninger, som vedtages og nedskrives.
 
-- The team hands over the document in advance, so everybody is prepared for the meeting.
+Informelle reviews:
 
-
-- Corrective actions are suggested.
-
-\
-Semi-formal reviews:
-
-- Can occur many times during the course of developing.
-
-
-- It is a presentation by the peron responsible.
-
-
-- Question are taken throughout the presentation.
-
-
-- Errors are pointed out, but no corrective actions are suggested.
-
-\
-Informal reviews:
-
-- Think in the terms of a brainstorm.
-
-
-- No agenda.
-
-
-- This can happen by the coffee machine.
+- Kaffemaskine møder.
+- Impulsive
+- Ingen nedskrevne løsninger. 
 
 ***
 ### Technical reviews
-A Technical review is a static white-box testing technique which is conducted to spot the defects early in the life 
-cycle that cannot be detected by black box testing techniques
 
+A Technical review er en 'statisk white-box testing' teknik.
 
-- Technical Reviews are documented and uses a defect detection process that has peers and technical specialist as part of the review process.
-
-
-- The Review process doesn't involve management participation.
-
-
-- It is usually led by trained moderator who is NOT the author.
-
-
-- The report is prepared with the list of issues that needs to be addressed.
-
-
+- Bruges til at finde/løse fejl i koden.
+- Nå til konsensus.
+- Tekniske specialister deltager.
+- Ledelsen deltager ikke nødvendigvis.
+- Ledes normal af en moderator (Må ikke være ham der har skrevet koden).
+- Dokumenteres med fundne fejl og løsninger på problemerne.
 
 ***
 ### Management reviews
-Systematic evaluation of a software by or on the behalf of management to monitor progress and to determine 
-the status of plans and schedule.
 
+Systematisk evaluering af udviklingen.
 
-
-- Check if the resources are allocated correctly.
-
-
-- If necessary they can change the scope of the project
-
-
-- Management reviews the progress of the program and evaluates why changes and/ or modifications
-  should be mad.
-
-####Expected output from Management reviews
-A document to identify:
-- Project under review.
-
-
-- Review team members to check their skills and technical know-how
-
-
-- Defects in the system.
+- Ledelsen står for den, sammen med en erfaren programmer (Moderator, Senior Dev, Architect)
+- Undersøger om tidsplanen holder i forhold til deadlinen.
+- Ser på allokeringen af developers.
+- Gennemgår de forskellige programmørers arbejde.
+- Hvis nødvendigt kan der ændres i 'scopet' på projektet.
+- Dokumenteres med:
+  - Project under review.
+  - Review team members to check their skills and technical know-how
+  - Defects in the system.
 
 ***
 ### Audit
-Audit means an independent examination of a software product or processes to assess compliance with specifications, 
-standards, contractual agreements or other criteria.
 
-It can be related to Software Quality Assurance (SQA)
+Laves af folk udenfor projektet.
 
-The aim of conducting a software audit:
-Provide an independent evaluation of the software project and processes to the agreed standards, 
-both in planning guidelines and procedures.
+Uafhængig undersøgelse af et software produkt.
+
+- Vurderer produktets overensstemmelse med kravsspecifikationerne (FURPS).
+- Tjekker for kode standarder.
+- Kontraktmæssige forhold og aftaler.
+
+Relaterer til Quality Assurance (QA)
+
+Formålet er at lave en uafhængig undersøgelse af:
+- Projektet som helhed
+- Aftalte standarder
 
 ***
 ### Static analysis
@@ -103,7 +69,7 @@ Analysing code without running it.
 
 
 - Automatic code review
-  - Analasys
+  - Analysis
   - Contracts
   - Proofs
   
@@ -114,7 +80,7 @@ Prevent bugs instead of fixing them.
 
 ####Manuel code reviews
 
-![img.png](Images/ManuelReview.png)
+WTF's per minute.
 
 ####Automated Approaches - Model
 - Cyclomatic Complexity (CC)
@@ -122,7 +88,6 @@ Prevent bugs instead of fixing them.
   - Higher number = More complex code = Bad.
 
 Flow graphs are used to calculate CC within a software program.
-![img_1.png](Images/img_1.png)
 
 Formula for calculating code complexity:
 
@@ -133,59 +98,6 @@ N = Number of nodes.
 
     V (G) = P + 1
 P = predicate nodes. (Nodes that contain conditions)
-
-Example:
-    
-    i = 0;
-    n=4; //N-Number of nodes
-    
-    while (i<n-1) do
-    j = i + 1;
-    
-    while (j<n) do
-    
-    if A[i]<A[j] then
-    swap(A[i], A[j]);
-    
-    end do;
-    i=i+1;
-    
-    end do;
-![img_2.png](Images/img_2.png)
-
-
-    V(G) = 9 – 7 + 2 = 4
-    V(G) = 3 + 1 = 4 (Condition nodes are 1,2 and 3 nodes)
-    Basis Set – A set of possible execution path of a program
-    1, 7
-    1, 2, 6, 1, 7
-    1, 2, 3, 4, 5, 2, 6, 1, 7
-    1, 2, 3, 5, 2, 6, 1, 7
-
-
-Basis Path testing is one of White box technique, and it guarantees to execute at least one statement during testing.
-It checks each linearly independent path through the program, which means number test cases, will be equivalent
-to the cyclomatic complexity of the program.
-
-This metric is useful because of properties of Cyclomatic complexity (CC) –
-
-1. CC can be number of test cases to achieve branch coverage (Upper Bound)
-2. CC can be number of paths through the graphs. (Lower Bound)
-
-
-    If (Condition 1)
-    Statement 1
-    
-    Else
-    Statement 2
-    
-    If (Condition 2)
-    Statement 3
-    
-    Else
-    Statement 4
-
-Cyclomatic Complexity for this program will be 8-7+2=3.
 
 | Complexity number | Meaning                                                                          |
 |-------------------|----------------------------------------------------------------------------------|
@@ -204,27 +116,19 @@ Other tools for static analysis:
   - Warns about bad practices
 ***
 ### Linters
-Linter is an analysing tool to help improve code. It is in the Static analysis category. 
 
-\
-It's a type of automated check, which should happen early in development, before code reviews and testing.
+Linters er et analyserings værktøj - del af Statisk Analyse.
 
-\
-This is done because automated code checks makes the code review and test processes more efficient.
+Automatisk værktøj - køre sideløbende med kodning - modsat fx. QAPlug.
 
-The benefits:
+Fordele:
 
-- Fewer errors in production.
+- Færre fejl efter programmet er sat i produktion.
 
-- Checks for code smell (Potential problems)
+- Tjekker for 'code smell'.
 
-- Readable, maintainable and more consistent code.
+- Tjekker for syntaks fejl og strukturelle fejl.
 
-PROS:
-- Lint checks syntax errors and structural problems.
+- Tjekker for afvigelser fra kode standarder.
 
-- Lint checks against best practices and code style guideline violations.
-
-
-- Lint is inexpensive 
-
+Vi har brugt SonarLint.

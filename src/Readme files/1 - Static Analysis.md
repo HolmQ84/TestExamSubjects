@@ -8,9 +8,7 @@ Explain how it helped you or could have helped you in your project.
 
 ### Static Analysis generally
 
-Static Analysis is the automated analysis of source code without executing the application.
-
-When the analysis is performed during program execution then it is known as Dynamic Analysis.
+Static Analysis is testing without running code.
 
 Static Analysis is often used to detect:
 
@@ -19,14 +17,7 @@ Static Analysis is often used to detect:
 - Non-compliance with standards.
 - Use of out of date programming constructs (Deprecated libraries and classes)
 
-All the above will create vulnerabilities in a program, whether it's related to potential security breaches, 
-performance issues or future disabled functions which results in a non-functional code.
-
-Therefore, using a static analysis tool will greatly increase your chances of improving the code, 
-which will result in a better product in the end.
-
-Another useful usage for static analysis tools are for junior developers to get a better understanding 
-of where to focus on improving their skills and thus creating better code.
+Can also be used for junior developers to increase their skill level.
 
 #### Automated Approaches - Model
 - Cyclomatic Complexity (CC)
