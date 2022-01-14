@@ -182,6 +182,8 @@ Hvilke ting kan der laves statisk tests på:
 - Kildekoden
 - Test scenarioer
 
+Udover de overstående elementer, kan der også laves Static Analysis.
+
 ***
 ### Acceptance testing
 

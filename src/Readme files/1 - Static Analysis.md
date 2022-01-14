@@ -19,7 +19,7 @@ Static Analysis is often used to detect:
 - Non-compliance with standards.
 - Use of out of date programming constructs (Deprecated libraries and classes)
 
-All the above will create vulnerabilities in a program, wheither it's related to potential security breaches, 
+All the above will create vulnerabilities in a program, whether it's related to potential security breaches, 
 performance issues or future disabled functions which results in a non-functional code.
 
 Therefore, using a static analysis tool will greatly increase your chances of improving the code, 
